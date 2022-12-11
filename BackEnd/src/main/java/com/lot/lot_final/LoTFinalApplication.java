@@ -1,0 +1,16 @@
+package com.lot.lot_final;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@EnableSwagger2
+@SpringBootApplication
+public class LoTFinalApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LoTFinalApplication.class, args);
+    }
+
+}
