@@ -22,4 +22,6 @@ public class GlobalSum {
     public int dead;
     @Column(name = "update_time")
     public Date date;
+    @Column(name = "update_time")
+    public Date updateTime;
 }

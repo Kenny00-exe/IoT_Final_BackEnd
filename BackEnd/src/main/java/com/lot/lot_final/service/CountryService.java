@@ -21,8 +21,8 @@ public class CountryService {
     CountryLatestDAO countryLatestDAO;
 
     public List<CountryLatest> getLatestAll(){
-        //Sort s = Sort.by(Sort.Direction.DESC,"province_confirmed_count");
-        return countryLatestDAO.findAll();
+        Sort s = Sort.by(Sort.Direction.DESC,"confirmedCount");
+        return countryLatestDAO.findAll(s);
     }
 
     public List<Country> findAllByCountryName(String name){

@@ -27,8 +27,8 @@ public class ProvinceService {
 
 
     public List<ProvinceLatest> findProvinceLatest(){
-        //Sort s = Sort.by(Sort.Direction.DESC,"provinceConfirmedCount");
-        return provinceLatestDAO.findAll();
+        Sort s = Sort.by(Sort.Direction.DESC,"provinceConfirmedCount");
+        return provinceLatestDAO.findAll(s);
     }
 
     public List<ForecastEntity> getForecast(String name){
